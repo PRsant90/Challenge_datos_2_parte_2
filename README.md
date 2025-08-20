@@ -42,8 +42,11 @@ El análisis se realizó con diferentes modelos de Machine Learning y se complem
 | Árbol de Decisión   | 0.7104  | 0.4719    | **0.7629** | 0.5831 | 0.811 |
 
 📌 **Modelo recomendado**: **Regresión Logística**, ya que alcanzó el mejor **AUC** y un F1 competitivo frente a Random Forest.  
-El **Random Forest** sigue siendo una opción robusta, y con ajuste aún más fino de hiperparámetros podría mejorar.  
+El **Random Forest** sigue siendo una opción robusta, y con ajuste aún más fino de hiperparámetros podría mejorar. 
 
+   ![Matriz Logística](matriz_confusion2.png)
+   ![Matriz Árbol](matriz_confusion3.png)
+   ![Matriz RF](matriz_confusion4.png)
 ---
 
 ## 🔎 Factores más influyentes en la cancelación
@@ -59,9 +62,13 @@ El **Random Forest** sigue siendo una opción robusta, y con ajuste aún más fi
 - La **curva ROC** permite evaluar la capacidad de discriminación de cada modelo.  
 - El **área bajo la curva (AUC)** indica la habilidad de separar clientes que cancelan de los que permanecen:  
   - **Baseline** ≈ 0.50 (equivalente al azar).  
-  - **Regresión Logística** y **Random Forest** con las mejores curvas, separándose claramente de la diagonal.  
-  - **Árbol de Decisión** menos estable, pero con buen recall.  
-
+  - **Regresión Logística** y **Random Forest** con las mejores curvas, separándose claramente de la diagonal.
+  - **Árbol de Decisión** menos estable, pero con buen recall.
+    
+    
+    ![Curvas ROC](Curvas_ROC(1).png)
+     
+   
 ---
 
 ## 💬 Comentarios sobre modelos adicionales
